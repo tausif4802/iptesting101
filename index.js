@@ -11,7 +11,7 @@ app.set('trust proxy', true);
 app.get('/', (req, res) => {
   console.log(req);
   console.log(req.ip);
-  res.send(req);
+  res.send(req.ip);
 });
 
 const PORT = 3000;
